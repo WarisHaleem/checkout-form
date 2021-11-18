@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-3</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="check-out">
+        <div class="services">
+            <h1>Services Summary</h1>
+            <table>
+                <tr>
+                    <td>Hosting</td>
+                    <td>$199.99</td>
+                </tr>
+                <tr>
+                    <td>Domain</td>
+                    <td>$0</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$15.75</td>
+                </tr>
+
+                <tr id="last-row">
+                    <td>Total</td>
+                    <td>$240.75</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="payment-info">
+            <h1>Payment Information</h1>
+
+            <form action="#">
+
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Waris Haleem" id="name">
+
+                <label for="card-number">Card Number</label>
+                <input type="text" name="cardnumber" id="card-number" placeholder="1010 1010 1010 1010 ">
+
+                <label for="expiry-date">Expiration Date</label>
+
+                <select name="expiry-month" id="expiry-date">
+                    <option value="1">May</option>
+                    <option value="2">June</option>
+                    <option value="3">July</option>
+                </select>
+
+                <select name="expiry-year" id="expiry-date">
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" name="cvc" placeholder="1010">
+
+                <button><i class="fas fa-lock"></i> Complete Order</button>
+            </form>
+            <p><i class="fas fa-lock"></i> Your credit card information is encrypted.</p>
+        </div>
+    </div>
+</body>
+
+</html>
